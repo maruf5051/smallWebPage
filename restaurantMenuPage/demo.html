@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .menu-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu-info h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-info h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴 Delicious Restaurant Menu</h1>
+        <p>Fresh • Tasty • Affordable</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
+            <div class="menu-info">
+                <h3>Margherita Pizza</h3>
+                <p>Classic delight with fresh mozzarella & basil.</p>
+                <p class="price">$8.99</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?burger" alt="Burger">
+            <div class="menu-info">
+                <h3>Cheese Burger</h3>
+                <p>Juicy beef patty with melted cheese & veggies.</p>
+                <p class="price">$6.49</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+            <div class="menu-info">
+                <h3>Italian Pasta</h3>
+                <p>Creamy Alfredo pasta with garlic bread.</p>
+                <p class="price">$7.50</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?salad" alt="Salad">
+            <div class="menu-info">
+                <h3>Greek Salad</h3>
+                <p>Fresh veggies, feta cheese, and olives.</p>
+                <p class="price">$5.20</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Delicious Restaurant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
